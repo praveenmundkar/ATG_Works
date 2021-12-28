@@ -1,0 +1,13 @@
+Date: Fri, 19 Nov 2021 06:08:42 GMT
+Content-Type: text/html; charset=UTF-8
+Cf-Chl-Bypass: 1
+Permissions-Policy: accelerometer=(),autoplay=(),camera=(),clipboard-read=(),clipboard-write=(),fullscreen=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+X-Frame-Options: SAMEORIGIN
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Set-Cookie: __cf_bm=hunTMjxIFtS2qo69mfIZqpN3ZbGyqlfP6QNpqtFcHv0-1637302122-0-AYqR+spOi4pQihB2ymVIsPyp0aLA0aExVckUrw+1+S5Z6NwMFRrOQE2isXvjQsw7PViaCkxWQOFHpN9aZuiOxnU=; path=/; expires=Fri, 19-Nov-21 06:38:42 GMT; domain=.angel.co; HttpOnly; Secure; SameSite=None
+Vary: Accept-Encoding
+Server: cloudflare
+Cf-Ray: 6b0743fad8756f04-BOM
+Content-Encoding: gzip
