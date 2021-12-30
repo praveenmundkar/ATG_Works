@@ -11,9 +11,10 @@ class spider2(scrapy.Spider):
             yield scrapy.Request(url=i + '/jobs',callback = self.parse)
 
     def parse(self, response):
+        company = response.xpath("//h1/a/text()").extract_first()
         for ap_link in  response.xpath("//div[contains(@class ,'styles_component__2UhSH')]"):
-            apply_now = ap_link.xpath(".//div[contains(@class ,'styles_component__2UhSH')]/div[2]/div/a/@href").extract_first()
-            job_position = ap_link.xpath(".//div[contains(@class ,'styles_component__2UhSH')]/a/h4/text()").extract_first()
+            apply_now = ap_link.xpath(".//div[2]/div/a/@href").extract_first()
+            job_position = ap_link.xpath(".//a/h4/text()").extract_first()
             yield {
-                 "job_position" : job_position, 'apply_link': apply_now
+               company : { job_position :  apply_now }
             }

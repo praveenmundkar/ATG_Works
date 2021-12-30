@@ -10,7 +10,7 @@
 # for com in cursor:
 #     l.append(com[0])
 # 
-# file = open("copy.txt", "w")
+# file = open("Company_list.txt", "w")
 # file.write(str(l))
 # file.close()
 
