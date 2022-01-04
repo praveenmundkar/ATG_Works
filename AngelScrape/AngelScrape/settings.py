@@ -57,7 +57,7 @@ ROBOTSTXT_OBEY = False
 #}
 SPIDER_MIDDLEWARES = {
     'AngelScrape.middlewares.AngelscrapeSpiderMiddleware': 543,
-    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': 2,
     # 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
 }
 # Enable or disable downloader middlewares

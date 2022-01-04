@@ -8,7 +8,7 @@ class spider2(scrapy.Spider):
 
     def start_requests(self,  company_list= url_list):
         for i in company_list:
-            yield scrapy.Request(url=i ,callback = self.parse)
+            yield scrapy.Request(url=i+"  ",callback = self.parse)
 
     def parse(self, response):
         company = response.xpath("//h1/a/text()").extract_first()

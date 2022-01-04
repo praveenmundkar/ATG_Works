@@ -1,4 +1,5 @@
 import scrapy
+import time
 
 class spider2(scrapy.Spider):
     name = "spider3"
@@ -8,6 +9,7 @@ class spider2(scrapy.Spider):
 
     def start_requests(self,  company_list= url_list):
         for i in company_list:
+            time.sleep(3)
             yield scrapy.Request(url=i + '/funding',callback = self.parse)
 
     def parse(self, response):
@@ -18,3 +20,4 @@ class spider2(scrapy.Spider):
             yield {
                 company:{name : url}
             }
+        yield { "hello" : "spider"}
